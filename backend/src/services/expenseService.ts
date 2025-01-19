@@ -14,7 +14,6 @@ export class ExpenseService {
     if (!group) {
       throw new Error(`グループ： ${groupName} が存在しません`);
     }
-
     // 支出データを取得し、グループ名と一致するものに絞り込む
     const expenses = this.expenseRepository
       .loadExpenses()
@@ -32,7 +31,6 @@ export class ExpenseService {
     if (!group.members.includes(expense.payer)) {
       throw new Error("支払い者がメンバーの中にいません");
     }
-
     this.expenseRepository.saveExpense(expense);
   };
 }

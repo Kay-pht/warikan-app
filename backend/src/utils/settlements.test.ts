@@ -20,7 +20,7 @@ describe("calculateSettlements", () => {
     const groupMembers = ["A", "B", "C"];
 
     const expectedSettlements: Settlement[] = [
-      { from: "B", to: "A", amount: 3 },
+      { from: "B", to: "A", amount: 34 },
       { from: "C", to: "A", amount: 133 },
     ];
 
