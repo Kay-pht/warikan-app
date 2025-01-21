@@ -1,11 +1,7 @@
 import { GroupService } from "./groupService";
 import { ExpenseRepository } from "../repositories/expenseRepository";
 import { ExpenseService } from "./expenseService";
-import { mock } from "node:test";
 import { Expense, Group } from "../type";
-
-jest.mock("../repositories/expenseRepository");
-jest.mock("../services/groupService");
 
 describe("ExpenseService", () => {
   let mockGroupService: Partial<GroupService>;
