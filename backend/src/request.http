@@ -3,7 +3,7 @@ POST http://localhost:3000/groups
 Content-Type: application/json
 
 {
-  "name": "テストグループ1",
+  "name": "テストグループ2",
   "members": ["一郎", "二郎", "三郎"]
 }
 
