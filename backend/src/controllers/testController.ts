@@ -13,7 +13,6 @@ export class TestController {
     // テストデータの初期化
     fs.writeFileSync(GROUP_FILE_PATH, JSON.stringify([]));
     fs.writeFileSync(EXPENSE_FILE_PATH, JSON.stringify([]));
-
     return res.status(200).send("テストファイルを初期化しました");
   };
 }
